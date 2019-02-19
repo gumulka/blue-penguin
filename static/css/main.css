@@ -207,6 +207,13 @@ img {
     margin-right: auto;
 }
 
+
+footer > p a img {
+    box-shadow: None;
+    border-radius: None;
+    display: inline-block;
+}
+
 /*sub and sup stolen from Twitter bootstrap.*/
 sub, sup {
     position: relative;

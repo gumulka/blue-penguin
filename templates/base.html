@@ -96,14 +96,24 @@ nav li.selected a {
             <div class="clear"></div>
             <footer>
                 <p>
+                    <a href="https://github.com/jody-frankowski/blue-penguin">Blue Penguin</a> Theme
+                    &middot;
+    Powered by <a href="http://getpelican.com">Pelican</a>
                  {% if FEED_ALL_ATOM %}
                 &middot;
-                <a href="{{ SITEURL }}/{{ FEED_ALL_ATOM }}" rel="alternate">Atom Feed</a>
+                <a href="{{ SITEURL }}/{{ FEED_ALL_ATOM }}" rel="alternate"><img title="Atom Feed" src="{{ SITEURL }}/theme/images/icons/rss.png"></a>
                  {% endif %}
                  {% if FEED_ALL_RSS %}
                 &middot;
-                <a href="{{ SITEURL }}/{{ FEED_ALL_RSS }}" rel="alternate">Rss Feed</a>
-                 {% endif %}
+                <a href="{{ SITEURL }}/{{ FEED_ALL_RSS }}" rel="alternate"><img title="Rss Feed" src="{{ SITEURL }}/theme/images/icons/rss.png"></a>
+                {% endif %}
+               {% if SOCIAL %}
+               &middot;
+                  {% for name, link in SOCIAL %}
+              <a href="{{ link }}" target="_blank" ><img src="{{ SITEURL }}/theme/images/icons/{{ name|lower }}.png"></a>
+                  {% endfor %}
+              {% endif %}
+            </p>
             </footer>
             {% endif %}
         </div>
