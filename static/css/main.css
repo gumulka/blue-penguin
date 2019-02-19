@@ -86,8 +86,21 @@ h1, h2, h3, h4, h5, h6 {
     font-family: sans-serif;
     font-weight: bold;
 }
-h1, h2, h3 {
+h1 {
     font-size: 1.5em;
+    line-height: 1em;
+    margin: 1em 0;
+    color: rgb(87, 199, 92);
+}
+
+h2 {
+    font-size: 1.3em;
+    line-height: 1em;
+    margin: 1em 0;
+}
+
+h3 {
+    font-size: 1.1em;
     line-height: 1em;
     margin: 1em 0;
 }
