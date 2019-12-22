@@ -432,6 +432,36 @@ footer p { margin: 0; }
         font-size: 11pt;
     }
 }
+@media (prefers-color-scheme: dark) {
+    a {
+        color: rgb(30, 100, 30);
+    }
+
+    h1 {
+        color: rgb(30, 100, 30)
+    }
+
+    nav li.selected a {
+        background-color: rgb(30, 100, 30);
+    }
+
+    .info a.tags {
+        background: #333;
+    }
+
+    html {
+        background-color: #222229;
+    }
+
+    body {
+        color: #a4a4a4;
+    }
+
+    img {
+        filter: grayscale(30%);
+    }
+}
+
 @page {
     margin: 1.5cm;
 }
